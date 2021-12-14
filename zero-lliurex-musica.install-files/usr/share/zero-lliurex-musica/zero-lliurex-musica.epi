@@ -1,0 +1,16 @@
+{
+
+	"type":"mix",
+
+	"pkg_list": [{"name":"ardour","custom_name":"Ardour","custom_icon":"ardour.png","type":"apt"},{"name":"audacity","custom_name":"Audacity Audio editor","custom_icon":"audacity.png","type":"apt"},{"name":"guitarix","custom_name":"Guitarix turn your computer into a full blown guitar rig.","custom_icon":"guitarix.png","type":"apt"},{"name":"hydrogen","custom_name":"Hidrogen Drum Machine sequenzer","custom_icon":"hydrogen.png","type":"apt"},{"name":"musescore","custom_name":"Musescore write music with an integrated sequencer.","custom_icon":"musescore.png","type":"apt"},{"name":"qtractor","custom_name":"Qtractor is a digital audio workstation","custom_icon":"qtractor.png","type":"apt"},{"name":"sonic-pi","custom_name":"Sonic Pi.","custom_icon":"sonic-pi.png","type":"apt"},{"name":"sooperlooper","custom_name":"SooperLooper is a realtime software looping sampler","custom_icon":"sooperlooper.png","type":"apt"},{"name":"tuxguitar","custom_name":"TuxGuitar Learn guitar.","custom_icon":"tuxguitar.png","type":"apt"},{"name":"yoshimi","custom_name":"Yoshimi is a powerful synthesizer","custom_icon":"yoshimi.png","type":"apt"}],
+
+	"script": {"name":"/usr/share/zero-lliurex-musica/zero-lliurex-musica_script", "remove":true},
+
+	"zomando":"zero-lliurex-musica",
+
+	"custom_icon_path":"/usr/share/zero-lliurex-musica/",
+
+	"selection_enabled":{"active":true,"all_selected":false}
+
+
+	}
