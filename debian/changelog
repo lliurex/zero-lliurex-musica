@@ -1,3 +1,9 @@
+zero-lliurex-musica (0.2) bionic; urgency=medium
+
+  * Adding Musescore3.
+
+ -- Daniel Duran <daduve@gmail.com>  Fri, 11 Mar 2022 09:56:52 +0100
+
 zero-lliurex-musica (0.1) bionic; urgency=medium
 
   * Initial release.
