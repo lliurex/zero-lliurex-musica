@@ -10,8 +10,45 @@ PACKAGE_LIST=$@
 
 case $ACTION in
 
+	getStatus)
+			
+		#START musescoref
+			if [[ " ${PACKAGE_LIST[*]} " == *" musescoref "* ]]; then
+				if flatpak list --app | grep org.musescore.MuseScore; then
+					echo 0
+				else
+					echo 1
+				fi
+				#statements
+			else
+        		echo "Not found"
+      		fi
+		#END musescoref
+	;;
+
 	preInstall)
 		
+	;;
+
+	installPackage)
+
+		#START musescoref
+			if [[ " ${PACKAGE_LIST[*]} " == *" musescoref "* ]]; then
+				echo " * * Start Installing Musescore Latest Version from flatpack * * "
+				if flatpak list --app | grep org.musescore.MuseScore;
+					then echo "Installed";
+					else
+						#https://dl.flathub.org/repo/appstream/org.musescore.MuseScore.flatpakref
+						flatpak install flathub org.musescore.MuseScore -y
+						var1="Icon=org.musescore.MuseScore"
+						var2="Icon=mscore3"
+						sed -i -e "s/$var1/$var2/g" /var/lib/flatpak/app/org.musescore.MuseScore/current/active/export/share/applications/org.musescore.MuseScore.desktop
+						update-desktop-database
+				fi
+				echo " * * Installed Musescore Latest Version * * "
+			fi
+		#END musescoref
+			
 	;;	
 	
 	postInstall)
@@ -24,6 +61,15 @@ case $ACTION in
 		for ix in $PACKAGE_LIST	
 
 		do
+			#START musescoref
+			if [[ " $ix " == *" musescoref "* ]]; then
+				if flatpak list --app | grep org.musescore.MuseScore;
+					echo "Removing files from Musescore Latest Version from flatpack..."
+					flatpak uninstall org.musescore.MuseScore -y
+					echo " * * Finished Musescore Latest Version from flatpack Uninstall * *  "
+				fi
+			fi
+			#END musescoref
 
 			apt-get remove -y $ix
 
