@@ -18,7 +18,7 @@ case $ACTION in
 			
 		#START musescoref
 			if [[ " ${PACKAGE_LIST[*]} " == *" musescoref "* ]]; then
-				if flatpak list --app | grep org.musescore.MuseScore; then
+				if [ -d  '/var/lib/flatpak/app/org.musescore.MuseScore' ]; then
 					echo 0
 				else
 					echo 1
@@ -51,6 +51,7 @@ case $ACTION in
 				fi
 				echo " * * Installed Musescore Latest Version * * "
 			fi
+			echo "FINITOOOOOO"
 		#END musescoref
 			
 	;;	
@@ -86,8 +87,10 @@ case $ACTION in
 			fi
 		done		
 
-	;;	
+	;;
 
 esac
+
+echo "ALL FINISHED"
 
 exit 0
