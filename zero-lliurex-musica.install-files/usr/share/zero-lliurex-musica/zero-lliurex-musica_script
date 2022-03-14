@@ -43,6 +43,7 @@ case $ACTION in
 					echo "Installed"
 				else
 					#https://dl.flathub.org/repo/appstream/org.musescore.MuseScore.flatpakref
+					flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 					flatpak install flathub org.musescore.MuseScore -y
 					var1="Icon=org.musescore.MuseScore"
 					var2="Icon=mscore3"
