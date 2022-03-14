@@ -52,7 +52,6 @@ case $ACTION in
 				fi
 				echo " * * Installed Musescore Latest Version * * "
 			fi
-			echo "FINITOOOOOO"
 		#END musescoref
 			
 	;;	
@@ -91,7 +90,5 @@ case $ACTION in
 	;;
 
 esac
-
-echo "ALL FINISHED"
 
 exit 0
