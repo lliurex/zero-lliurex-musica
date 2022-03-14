@@ -11,7 +11,7 @@ PACKAGE_LIST=$@
 case $ACTION in
 
 	download)
-		
+		echo "Nothing to do"
 	;;
 
 	getStatus)
@@ -82,7 +82,8 @@ case $ACTION in
 
 					exit 1
 
-				fi;
+				fi
+			fi
 		done		
 
 	;;	
