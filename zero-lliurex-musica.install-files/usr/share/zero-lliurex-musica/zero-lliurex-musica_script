@@ -82,10 +82,7 @@ case $ACTION in
 
 					exit 1
 
-				fi
-
-							
-
+				fi;
 		done		
 
 	;;	
