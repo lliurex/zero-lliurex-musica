@@ -68,18 +68,17 @@ case $ACTION in
 					flatpak uninstall org.musescore.MuseScore -y
 					echo " * * Finished Musescore Latest Version from flatpack Uninstall * *  "
 				fi
-			fi
 			#END musescoref
+			else
+				apt-get remove -y $ix
 
-			apt-get remove -y $ix
+				TEST=$( dpkg-query -s  $ix 2> /dev/null| grep Status | cut -d " " -f 4 )
 
-			TEST=$( dpkg-query -s  $ix 2> /dev/null| grep Status | cut -d " " -f 4 )
+				if [ "$TEST" == 'installed' ];then
 
-			if [ "$TEST" == 'installed' ];then
+					exit 1
 
-				exit 1
-
-			fi
+				fi
 
 							
 
