@@ -10,6 +10,10 @@ PACKAGE_LIST=$@
 
 case $ACTION in
 
+	download)
+		
+	;;
+
 	getStatus)
 			
 		#START musescoref
