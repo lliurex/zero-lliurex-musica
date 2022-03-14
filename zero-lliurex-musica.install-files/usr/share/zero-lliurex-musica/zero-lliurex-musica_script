@@ -32,6 +32,13 @@ case $ACTION in
 
 	preInstall)
 		
+		#START musescoref
+			if [[ " ${PACKAGE_LIST[*]} " == *" musescoref "* ]]; then
+				if ! dpkg -s ca-certificates >/dev/null 2>&1; then
+  					sudo apt-get install --reinstall ca-certificates -y
+				fi
+      		fi
+		#END musescoref
 	;;
 
 	installPackage)
