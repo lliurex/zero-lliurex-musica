@@ -32,6 +32,15 @@ case $ACTION in
 
 	preInstall)
 		
+		#START musescoref
+			if [[ " ${PACKAGE_LIST[*]} " == *" musescoref "* ]]; then
+				if ! dpkg -s ca-certificates >/dev/null 2>&1; then
+  					sudo apt-get install --reinstall ca-certificates -y
+				elif lliurex-version -n | grep 21.; then
+					sudo apt-get install --reinstall ca-certificates -y
+				fi
+      		fi
+		#END musescoref
 	;;
 
 	installPackage)
@@ -43,6 +52,7 @@ case $ACTION in
 					echo "Installed"
 				else
 					#https://dl.flathub.org/repo/appstream/org.musescore.MuseScore.flatpakref
+					flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 					flatpak install flathub org.musescore.MuseScore -y
 					var1="Icon=org.musescore.MuseScore"
 					var2="Icon=mscore3"
@@ -51,7 +61,6 @@ case $ACTION in
 				fi
 				echo " * * Installed Musescore Latest Version * * "
 			fi
-			echo "FINITOOOOOO"
 		#END musescoref
 			
 	;;	
@@ -90,7 +99,5 @@ case $ACTION in
 	;;
 
 esac
-
-echo "ALL FINISHED"
 
 exit 0
