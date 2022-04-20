@@ -1,0 +1,17 @@
+Name=zero-lliurex-photo
+Name[es]=Zero LliureX Fotografía
+Name[en]=Zero LliureX Photography
+Name[qcv]=Zero LliureX Fotografia
+Name[ca_ES]=Zero LliureX Fotografia
+Comment=Selection of programs for managing and editing photos
+Comment[es]=Selección de programas para la gestión y edición de fotografías
+Comment[qcv]=Selecció de programes per a la gestió i edició de fotografies
+Comment[ca_ES]=Selecció de programes per a la gestió i edició de fotografies
+Icon=zero-lliurex-photo
+Groups=sudo;admins;
+Category=Software
+ScriptPath=zero-lliurex-photo.zmd
+Using=pkexec
+Service=False
+Modal=True
+Locks=zero-lliurex-photo
