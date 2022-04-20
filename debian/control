@@ -12,3 +12,8 @@ Depends: zero-center,epi-gtk
 Description: Zero LliureX Musica 
 	Adding shortcut in zero-center to install some programs for music education 
 
+Package: zero-lliurex-photo
+Architecture: all
+Depends: zero-center,epi-gtk
+Description: Zero LliureX Photo
+	Adding shortcut in zero-center to install some programs for photo
