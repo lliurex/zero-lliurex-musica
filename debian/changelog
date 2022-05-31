@@ -1,3 +1,14 @@
+zero-lliurex-musica (0.5) focal-updates; urgency=medium
+
+  [ Daniel Duran ]
+  * Added new apps
+  
+  [ Juan Ramon Pelegrina ]
+  * Added zero-lliurex-photo
+  * Recategorized to Multimedia
+
+ -- Daniel Duran <daduve@gmail.com>  Tue, 31 May 2022 10:43:51 +0200
+
 zero-lliurex-musica (0.4) focal; urgency=medium
 
   * Fix BUG ca-certificates FOCAL 
