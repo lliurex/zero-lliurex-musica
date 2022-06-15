@@ -1,3 +1,9 @@
+zero-lliurex-musica (0.6) lliurex22; urgency=medium
+
+  * allow all groups
+
+ -- Raul Rodrigo Segura <raurodse@gmail.com>  Wed, 15 Jun 2022 19:20:37 +0200
+
 zero-lliurex-musica (0.5) focal-updates; urgency=medium
 
   [ Daniel Duran ]
