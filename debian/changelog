@@ -1,3 +1,9 @@
+zero-lliurex-musica (0.6.1) lliurex22; urgency=medium
+
+  * Generate wrapper for sonic-pi 
+
+ -- Juanma1980 <juanma1980@gmail.com>  Mon, 03 Oct 2022 18:44:00 +0200
+
 zero-lliurex-musica (0.6) lliurex22; urgency=medium
 
   * allow all groups
