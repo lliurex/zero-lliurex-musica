@@ -7,6 +7,7 @@ shift
 PACKAGE_LIST=$@
 
 
+echo ${PACKAGE_LIST[*]}
 
 case $ACTION in
 
@@ -68,6 +69,24 @@ case $ACTION in
 	;;	
 	
 	postInstall)
+			if [[ " ${PACKAGE_LIST[*]} " == *" sonic-pi "* ]]; then
+				mkdir /usr/share/sonicpi-pulseaudio-compat/ 2>/dev/null
+				printf 'JACKPARMS="-R -d alsa"\n
+if [[ -z $(ps -e | grep jackd) ]]\n
+then\n
+	jackd $JACKPARMS &\n
+	JACKPID=$!\n
+	sleep 1\n
+	pactl load-module module-jack-sink\n
+	pactl load-module module-jack-source\n
+	pacmd set-default-sink jack_out\n
+	pacmd set-default-source jack_in\n
+fi\n
+sonic-pi\n
+[[ $JACKPID -ne "" ]] && [[ ! -z $(ps -e | grep jackd | grep $JACKPID) ]] &&  kill -sTERM $JACKPID\n
+exit 0\n'>/usr/share/sonicpi-pulseaudio-compat/launchSonicPulseaudio.sh
+			fi
+
 
 			
 	;;	
@@ -86,6 +105,9 @@ case $ACTION in
 				fi
 			#END musescoref
 			else
+				if [[ " $ix " == *" sonic-pi "* ]]; then
+					rm -fr /usr/share/sonicpi-pulseaudio-compat/ 2>/dev/null
+				fi
 				apt-get remove -y $ix
 
 				TEST=$( dpkg-query -s  $ix 2> /dev/null| grep Status | cut -d " " -f 4 )
