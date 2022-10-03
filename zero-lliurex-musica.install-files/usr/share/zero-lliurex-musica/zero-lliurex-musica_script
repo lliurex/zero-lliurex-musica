@@ -85,6 +85,7 @@ fi\n
 sonic-pi\n
 [[ $JACKPID -ne "" ]] && [[ ! -z $(ps -e | grep jackd | grep $JACKPID) ]] &&  kill -sTERM $JACKPID\n
 exit 0\n'>/usr/share/sonicpi-pulseaudio-compat/launchSonicPulseaudio.sh
+				lliurex-desktops-db ADD /usr/share/lliurex-desktops-keeper/custom-desktops/
 			fi
 
 
