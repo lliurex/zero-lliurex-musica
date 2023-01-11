@@ -1,7 +1,7 @@
 {
 
 	"type":"apt",
-	"pkg_list": [{"name":"darktable","custom_name":"Darktable: virtual lighttable and darkroom","custom_icon":"darktable.png","type":"apt"},{"name":"rapid-photo-downloader","custom_name":"Rapid-photo-downloader: photo downloader from multiple devices.","custom_icon":"rapid-photo-downloader.png","type":"apt"},{"name":"rawtherapee","custom_name":"Rawtherapee: raw image converter","custom_icon":"rawtherapee.png","type":"apt"}],
+	"pkg_list": [{"name":"darktable","custom_name":"Darktable: virtual lighttable and darkroom","custom_icon":"darktable.png","type":"apt"},{"name":"enblend","custom_name":"Enblend: image blending tool-CLI tool","custom_icon":"enblend.png","type":"apt"},{"name":"hugin","custom_name":"Hugin: panorama photo stitcher","custom_icon":"hugin.png","type":"apt"},{"name":"rapid-photo-downloader","custom_name":"Rapid-photo-downloader: photo downloader from multiple devices.","custom_icon":"rapid-photo-downloader.png","type":"apt"},{"name":"rawtherapee","custom_name":"Rawtherapee: raw image converter","custom_icon":"rawtherapee.png","type":"apt"}],
 	"script": {"name":"/usr/share/zero-lliurex-photo/zero-lliurex-photo_script","remove":true},
 	"zomando":"zero-lliurex-photo",
 	"custom_icon_path":"/usr/share/zero-lliurex-photo/",
