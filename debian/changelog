@@ -1,3 +1,9 @@
+zero-lliurex-musica (0.6.3) focal; urgency=medium
+
+  * Deleting Sonic Pi installation
+
+ -- Daniel Duran <daduve@gmail.com>  Tue, 14 Mar 2023 19:35:25 +0100
+
 zero-lliurex-musica (0.6.2) lliurex22; urgency=medium
 
   * Generate wrapper for sonic-pi 
