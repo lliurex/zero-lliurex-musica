@@ -1,3 +1,9 @@
+zero-lliurex-musica (0.6.5) focal; urgency=medium
+
+  * Changed tuxguitar to install flatpak instead apt
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Wed, 14 Jun 2023 14:58:48 +0200
+
 zero-lliurex-musica (0.6.4) focal; urgency=medium
 
   * Removed jamin, rakarrack and whysynth.
