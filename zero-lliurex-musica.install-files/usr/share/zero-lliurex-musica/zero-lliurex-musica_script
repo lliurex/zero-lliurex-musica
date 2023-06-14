@@ -86,6 +86,16 @@ case $ACTION in
 					echo " * * Finished Musescore Latest Version from flatpack Uninstall * *  "
 				fi
 			#END musescoref
+			fi
+			
+			if [[ "$ix" == "ar.com.tuxguitar.TuxGuitar" ]]; then
+				flatpak uninstall $ix -y
+				TEST=$(flatpak list | grep tuxguitar | cut -d " " -f 1)
+
+				if [[ ! -z "$TEST" ]];then
+					exit 1
+				fi
+
 			else
 				apt-get remove -y $ix
 
