@@ -1,0 +1,19 @@
+Source: zero-lliurex-musica
+Section: x11
+Priority: optional
+Maintainer: Equipo LliureX <lliurex@gva.es>
+Uploaders: Daniel Duran Vecino <daduve@gmail.com>
+Build-Depends: llxsrchelper,debhelper (>= 10), zero-dev, inkscape(>=0.47)
+Standards-Version: 4.1.2
+
+Package: zero-lliurex-musica
+Architecture: all
+Depends: zero-center,epi-gtk
+Description: Zero LliureX Musica 
+	Adding shortcut in zero-center to install some programs for music education 
+
+Package: zero-lliurex-photo
+Architecture: all
+Depends: zero-center,epi-gtk
+Description: Zero LliureX Photo
+	Adding shortcut in zero-center to install some programs for photo

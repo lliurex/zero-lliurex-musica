@@ -1,0 +1,64 @@
+zero-lliurex-musica (0.6.5) focal; urgency=medium
+
+  * Changed tuxguitar to install flatpak instead apt
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Wed, 14 Jun 2023 14:58:48 +0200
+
+zero-lliurex-musica (0.6.4) focal; urgency=medium
+
+  * Removed jamin, rakarrack and whysynth.
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Tue, 28 Mar 2023 09:46:47 +0200
+
+zero-lliurex-musica (0.6.3) focal; urgency=medium
+
+  * Deleting Sonic Pi installation
+
+ -- Daniel Duran <daduve@gmail.com>  Tue, 14 Mar 2023 19:35:25 +0100
+
+zero-lliurex-musica (0.6.2) lliurex22; urgency=medium
+
+  * Generate wrapper for sonic-pi 
+
+ -- Juanma1980 <juanma1980@gmail.com>  Mon, 03 Oct 2022 18:44:00 +0200
+
+zero-lliurex-musica (0.6) lliurex22; urgency=medium
+
+  * allow all groups
+
+ -- Raul Rodrigo Segura <raurodse@gmail.com>  Wed, 15 Jun 2022 19:20:37 +0200
+
+zero-lliurex-musica (0.5) focal-updates; urgency=medium
+
+  [ Daniel Duran ]
+  * Added new apps
+  
+  [ Juan Ramon Pelegrina ]
+  * Added zero-lliurex-photo
+  * Recategorized to Multimedia
+
+ -- Daniel Duran <daduve@gmail.com>  Tue, 31 May 2022 10:43:51 +0200
+
+zero-lliurex-musica (0.4) focal; urgency=medium
+
+  * Fix BUG ca-certificates FOCAL 
+
+ -- Daniel Duran <daduve@gmail.com>  Tue, 15 Mar 2022 11:19:52 +0100
+
+zero-lliurex-musica (0.3) focal; urgency=medium
+
+  * Adding Musescore Flatpack Latest Version 3.6 
+
+ -- Daniel Duran <daduve@gmail.com>  Mon, 14 Mar 2022 18:43:03 +0100
+
+zero-lliurex-musica (0.2) focal; urgency=medium
+
+  * Adding Musescore3.
+
+ -- Daniel Duran <daduve@gmail.com>  Fri, 11 Mar 2022 09:56:52 +0100
+
+zero-lliurex-musica (0.1) focal; urgency=medium
+
+  * Initial release.
+
+ -- Daniel Duran Vecino <daduve@gmail.com>  Tue, 10 Mar 2020 09:15:25 +0100
