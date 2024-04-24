@@ -96,6 +96,14 @@ case $ACTION in
 					exit 1
 				fi
 
+			fi
+			if [[ "$ix" == "org.audacityteam.Audacity" ]]; then
+				flatpak uninstall $ix -y
+				TEST=$(flatpak list | grep audacity | cut -d " " -f 1)
+
+				if [[ ! -z "$TEST" ]];then
+					exit 1
+				fi	
 			else
 				apt-get remove -y $ix
 
