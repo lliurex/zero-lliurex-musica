@@ -15,3 +15,4 @@ Using=pkexec
 Service=False
 Modal=True
 Locks=zero-lliurex-musica
+Show=False
