@@ -1,2 +1,2 @@
 #!/bin/bash
-epi-gtk /usr/share/zero-lliurex-photo/zero-lliurex-photo.epi
+epi-gtk /usr/share/zero-lliurex-photo/zero-lliurex-photo.epi $1
