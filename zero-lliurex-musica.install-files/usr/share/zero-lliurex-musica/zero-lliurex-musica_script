@@ -54,7 +54,7 @@ case $ACTION in
 					if lliurex-version -n | grep 21.; then
 						flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 					fi
-					flatpak install flathub org.musescore.MuseScore -y
+					flatpak install flathub org.musescore.MuseScore -y --system
 					var1="Icon=org.musescore.MuseScore"
 					var2="Icon=mscore3"
 					sed -i -e "s/$var1/$var2/g" /var/lib/flatpak/app/org.musescore.MuseScore/current/active/export/share/applications/org.musescore.MuseScore.desktop
